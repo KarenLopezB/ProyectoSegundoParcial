@@ -1,0 +1,25 @@
+﻿<Window x:Class="ProyectoSegundoParcial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoSegundoParcial"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="700">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="44,44,0,0" TextWrapping="Wrap" Text="Despensa: " VerticalAlignment="Top" FontSize="20"/>
+        <ComboBox HorizontalAlignment="Left" Margin="199,44,0,0" VerticalAlignment="Top" Width="261" Height="27">
+            <ComboBoxItem>Arroz, Frijol y Semillas</ComboBoxItem>
+            <ComboBoxItem>Cereales y Barras</ComboBoxItem>
+            <ComboBoxItem>Pastas</ComboBoxItem>
+            <ComboBoxItem>Enlatados y Conservas</ComboBoxItem>
+            <ComboBoxItem>Salsa, Aderezos y Vinagre</ComboBoxItem>
+            <ComboBoxItem>Jugos y Bebidas</ComboBoxItem>
+        </ComboBox>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="536,44,0,0" VerticalAlignment="Top" Width="81" Height="27"/>
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+        <Grid HorizontalAlignment="Left" Height="220" Margin="44,104,0,0" VerticalAlignment="Top" Width="573"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="395,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="536,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
+    </Grid>
+</Window>
