@@ -32,13 +32,13 @@
         <CheckBox Content="75 - 100 gr/ml" HorizontalAlignment="Left" Margin="460,305,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="25 - 50 gr/ml" HorizontalAlignment="Left" Margin="568,259,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="0 - 25 gr/ml" HorizontalAlignment="Left" Margin="460,259,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnGuardarCB" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarSAV_Click" FontSize="14"/>
-        <Button x:Name="btnCancelarCB" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarSAV_Click" FontSize="14"/>
+        <Button x:Name="btnGuardarCB" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarSAV_Click" FontSize="14" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <Button x:Name="btnCancelarCB" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarSAV_Click" FontSize="14" FontFamily="Century Gothic" FontWeight="Bold"/>
         <CheckBox Content="50 - 75 gr/ml" HorizontalAlignment="Left" Margin="681,259,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="100 - 500 gr/ml" HorizontalAlignment="Left" Margin="568,305,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="500 - 1000 gr/ml" HorizontalAlignment="Left" Margin="681,305,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Vinagre" HorizontalAlignment="Left" Margin="677,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.711,0.867"/>
-        <TextBlock Visibility="Hidden" x:Name="txtExceptionSAV" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionSAV" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14" Foreground="Red"/>
 
     </Grid>
 </UserControl>

@@ -22,6 +22,6 @@
         <Button Visibility="Hidden" x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="395,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
         <Button Visibility="Hidden" x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="536,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
         <TextBlock Visibility="Hidden" HorizontalAlignment="Left" Margin="73,353,0,0" TextWrapping="Wrap" Text="*Es necesario llenar llenar todos los datos." VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="44,10,0,0" TextWrapping="Wrap" Text="SIMULADOR DE WALMART" VerticalAlignment="Top" FontSize="30" FontFamily="Meraki"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,10,0,0" TextWrapping="Wrap" Text="SIMULADOR DE WALMART" VerticalAlignment="Top" FontSize="30" FontFamily="Tekton Pro Ext" Foreground="#FF2F45D3"/>
     </Grid>
 </Window>

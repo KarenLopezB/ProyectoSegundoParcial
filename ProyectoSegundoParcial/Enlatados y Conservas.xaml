@@ -37,7 +37,7 @@
         <CheckBox Content="100 - 200 gr" HorizontalAlignment="Left" Margin="689,259,0,0" VerticalAlignment="Top"/> 
         <CheckBox Content="500 - 750 gr" HorizontalAlignment="Left" Margin="580,305,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="750 - 1000 gr" HorizontalAlignment="Left" Margin="689,305,0,0" VerticalAlignment="Top"/>
-        <TextBlock Visibility="Hidden" x:Name="txtExceptionEC" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionEC" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14" Foreground="Red"/>
 
     </Grid>
 </UserControl>

@@ -29,8 +29,8 @@
             <ComboBoxItem Content="+900 piezas"/>
         </ComboBox>
         <TextBlock HorizontalAlignment="Left" Margin="451,241,0,0" TextWrapping="Wrap" Text="Cantidad del producto por pieza:" VerticalAlignment="Top"/>
-        <Button x:Name="btnGuardarP" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarP_Click" FontSize="14"/>
-        <Button x:Name="btnCancelarP" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarP_Click" FontSize="14"/>
+        <Button x:Name="btnGuardarP" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarP_Click" FontSize="14" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <Button x:Name="btnCancelarP" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarP_Click" FontSize="14" FontFamily="Century Gothic" FontWeight="Bold"/>
         <CheckBox Content="1 kg" HorizontalAlignment="Left" Margin="657,283,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="500 gr" HorizontalAlignment="Left" Margin="575,283,0,0" VerticalAlignment="Top"/>
         <CheckBox Content="250 gr" HorizontalAlignment="Left" Margin="492,283,0,0" VerticalAlignment="Top"/>
@@ -38,7 +38,7 @@
         <RadioButton Content="Barilla" HorizontalAlignment="Left" Margin="492,96,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Letras" HorizontalAlignment="Left" Margin="580,96,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="Pluma" HorizontalAlignment="Left" Margin="666,96,0,0" VerticalAlignment="Top"/>
-        <TextBlock Visibility="Hidden" x:Name="txtExceptionP" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionP" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14" Foreground="Red"/>
 
     </Grid>
 </UserControl>

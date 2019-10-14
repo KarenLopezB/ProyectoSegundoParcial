@@ -35,7 +35,7 @@
         <CheckBox Content="2 kg" HorizontalAlignment="Left" Margin="661,259,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnGuardarAFS" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarAFS_Click" FontSize="14" FontWeight="Bold" FontFamily="Century Gothic"/>
         <Button x:Name="btnCancelarAFS" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarAFS_Click" FontSize="14" FontWeight="Bold" FontFamily="Century Gothic"/>
-        <TextBlock Visibility="Hidden" x:Name="txtExceptionASF" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionASF" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14" Foreground="Red"/>
 
     </Grid>
 </UserControl>
