@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Jugos_y_Bebidas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="grdJB" >
+        <TextBlock HorizontalAlignment="Left" Margin="34,31,0,0" TextWrapping="Wrap" Text="Nombre del producto:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreJB" HorizontalAlignment="Left" Height="24" Margin="198,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtNombreJB_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,92,0,0" TextWrapping="Wrap" Text="Código de barras:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigoJB" HorizontalAlignment="Left" Height="23" Margin="198,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtCodigoJB_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,155,0,0" TextWrapping="Wrap" Text="Marca / Empresa:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMarcaJB" HorizontalAlignment="Left" Height="24" Margin="198,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtMarcaJB_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,220,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,279,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescuentoJB" HorizontalAlignment="Left" Height="24" Margin="198,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtDescuentoJB_TextChanged"/>
+        <TextBox x:Name="txtPrecioJB" HorizontalAlignment="Left" Height="24" Margin="198,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtPrecioJB_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,31,0,0" TextWrapping="Wrap" Text="Tipo de pasta:" VerticalAlignment="Top"/>
+        <RadioButton Content="Café" HorizontalAlignment="Left" Margin="492,67,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Té" HorizontalAlignment="Left" Margin="580,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.711,0.867"/>
+        <TextBlock HorizontalAlignment="Left" Margin="451,135,0,0" TextWrapping="Wrap" Text="Cantidad de inventario:" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="609,135,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="0-300 piezas"/>
+            <ComboBoxItem Content="300-500 piezas "/>
+            <ComboBoxItem Content="500-700 piezas"/>
+            <ComboBoxItem Content="700-900 piezas"/>
+            <ComboBoxItem Content="+900 piezas"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="451,241,0,0" TextWrapping="Wrap" Text="Cantidad del producto por pieza:" VerticalAlignment="Top"/>
+        <Button x:Name="btnGuardarJB" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarJB_Click" FontSize="14"/>
+        <Button x:Name="btnCancelarJB" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarJB_Click" FontSize="14"/>
+        <CheckBox Content="1 L" HorizontalAlignment="Left" Margin="657,283,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="500 ml" HorizontalAlignment="Left" Margin="575,283,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="250 mi" HorizontalAlignment="Left" Margin="492,283,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Refresco" HorizontalAlignment="Left" Margin="666,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.711,0.867"/>
+        <RadioButton Content="Jugo" HorizontalAlignment="Left" Margin="492,96,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Agua" HorizontalAlignment="Left" Margin="580,96,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Energizantes" HorizontalAlignment="Left" Margin="666,96,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="1.5 L" HorizontalAlignment="Left" Margin="492,323,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="2 L" HorizontalAlignment="Left" Margin="575,323,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="3 L" HorizontalAlignment="Left" Margin="657,323,0,0" VerticalAlignment="Top"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionJB" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</UserControl>

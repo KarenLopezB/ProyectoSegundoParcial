@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ProyectoSegundoParcial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="700">
+        Title="MainWindow" Height="650" Width="900">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="44,44,0,0" TextWrapping="Wrap" Text="Despensa: " VerticalAlignment="Top" FontSize="20"/>
-        <ComboBox HorizontalAlignment="Left" Margin="199,44,0,0" VerticalAlignment="Top" Width="261" Height="27">
+        <TextBlock HorizontalAlignment="Left" Margin="44,61,0,0" TextWrapping="Wrap" Text="Despensa: " VerticalAlignment="Top" FontSize="18" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <ComboBox x:Name="cbInterfaz" HorizontalAlignment="Left" Margin="199,61,0,0" VerticalAlignment="Top" Width="261" Height="27" SelectionChanged="cbInterfaz_SelectionChanged">
             <ComboBoxItem>Arroz, Frijol y Semillas</ComboBoxItem>
             <ComboBoxItem>Cereales y Barras</ComboBoxItem>
             <ComboBoxItem>Pastas</ComboBoxItem>
@@ -16,10 +16,12 @@
             <ComboBoxItem>Salsa, Aderezos y Vinagre</ComboBoxItem>
             <ComboBoxItem>Jugos y Bebidas</ComboBoxItem>
         </ComboBox>
-        <Button Content="Agregar" HorizontalAlignment="Left" Margin="536,44,0,0" VerticalAlignment="Top" Width="81" Height="27"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="536,61,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnAgregar_Click" FontSize="14" FontFamily="Century Gothic" FontWeight="Bold"/>
         <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
-        <Grid HorizontalAlignment="Left" Height="220" Margin="44,104,0,0" VerticalAlignment="Top" Width="573"/>
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="395,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
-        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="536,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
+        <Grid x:Name="grdInterfaz" HorizontalAlignment="Left" Height="459" Margin="44,104,0,0" VerticalAlignment="Top" Width="756"/>
+        <Button Visibility="Hidden" x:Name="btnGuardar" Content="Guardar" HorizontalAlignment="Left" Margin="395,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
+        <Button Visibility="Hidden" x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="536,348,0,0" VerticalAlignment="Top" Width="82" Height="26"/>
+        <TextBlock Visibility="Hidden" HorizontalAlignment="Left" Margin="73,353,0,0" TextWrapping="Wrap" Text="*Es necesario llenar llenar todos los datos." VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="44,10,0,0" TextWrapping="Wrap" Text="SIMULADOR DE WALMART" VerticalAlignment="Top" FontSize="30" FontFamily="Meraki"/>
     </Grid>
 </Window>

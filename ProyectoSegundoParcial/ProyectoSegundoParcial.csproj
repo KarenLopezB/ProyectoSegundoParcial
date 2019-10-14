@@ -55,6 +55,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Arroz, Frijol y Semillas.xaml.cs">
+      <DependentUpon>Arroz, Frijol y Semillas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cereales y Barras.xaml.cs">
+      <DependentUpon>Cereales y Barras.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Enlatados y Conservas.xaml.cs">
+      <DependentUpon>Enlatados y Conservas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pastas.xaml.cs">
+      <DependentUpon>Pastas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Salsa, Aderezos y Vinagre.xaml.cs">
+      <DependentUpon>Salsa, Aderezos y Vinagre.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Arroz, Frijol y Semillas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cereales y Barras.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Enlatados y Conservas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Jugos y Bebidas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,10 +94,21 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Jugos y Bebidas.xaml.cs">
+      <DependentUpon>Jugos y Bebidas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pastas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Salsa, Aderezos y Vinagre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

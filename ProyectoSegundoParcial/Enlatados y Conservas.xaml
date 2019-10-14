@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Enlatados_y_Conservas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="grdEC">
+        <TextBlock HorizontalAlignment="Left" Margin="34,31,0,0" TextWrapping="Wrap" Text="Nombre del producto:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreEC" HorizontalAlignment="Left" Height="24" Margin="198,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtNombreEC_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,92,0,0" TextWrapping="Wrap" Text="Código de barras:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigoEC" HorizontalAlignment="Left" Height="23" Margin="198,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtCodigoEC_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,155,0,0" TextWrapping="Wrap" Text="Marca / Empresa:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMarcaEC" HorizontalAlignment="Left" Height="24" Margin="198,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtMarcaEC_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,220,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,279,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescuentoEC" HorizontalAlignment="Left" Height="24" Margin="198,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtDescuentoEC_TextChanged"/>
+        <TextBox x:Name="txtPrecioEC" HorizontalAlignment="Left" Height="24" Margin="198,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtPrecioEC_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,31,0,0" TextWrapping="Wrap" Text="Tipo de producto:" VerticalAlignment="Top"/>
+        <RadioButton Content="Enlatados" HorizontalAlignment="Left" Margin="492,67,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Conservas" HorizontalAlignment="Left" Margin="580,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.711,0.867"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,111,0,0" TextWrapping="Wrap" Text="Cantidad de inventario:" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="618,111,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="0-300 piezas"/>
+            <ComboBoxItem Content="300-500 piezas "/>
+            <ComboBoxItem Content="500-700 piezas"/>
+            <ComboBoxItem Content="700-900 piezas"/>
+            <ComboBoxItem Content="+900 piezas"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="460,217,0,0" TextWrapping="Wrap" Text="Cantidad del producto por pieza:" VerticalAlignment="Top"/>
+        <CheckBox Content="200 - 500 gr" HorizontalAlignment="Left" Margin="470,305,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="50 - 100 gr" HorizontalAlignment="Left" Margin="580,259,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="0 - 50 gr" HorizontalAlignment="Left" Margin="469,259,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnGuardarEC" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarEC_Click" FontSize="14" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <Button x:Name="btnCancelarEC" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarEC_Click" FontSize="14" FontFamily="Century Gothic" FontWeight="Bold"/>
+        <CheckBox Content="100 - 200 gr" HorizontalAlignment="Left" Margin="689,259,0,0" VerticalAlignment="Top"/> 
+        <CheckBox Content="500 - 750 gr" HorizontalAlignment="Left" Margin="580,305,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="750 - 1000 gr" HorizontalAlignment="Left" Margin="689,305,0,0" VerticalAlignment="Top"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionEC" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</UserControl>

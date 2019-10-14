@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Salsa__Aderezos_y_Vinagre"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="grdSAV">
+        <TextBlock HorizontalAlignment="Left" Margin="34,31,0,0" TextWrapping="Wrap" Text="Nombre del producto:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreSAV" HorizontalAlignment="Left" Height="24" Margin="198,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtNombreSAV_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,92,0,0" TextWrapping="Wrap" Text="Código de barras:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigoSAV" HorizontalAlignment="Left" Height="23" Margin="198,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtCodigoSAV_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,155,0,0" TextWrapping="Wrap" Text="Marca / Empresa:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMarcaSAV" HorizontalAlignment="Left" Height="24" Margin="198,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtMarcaSAV_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,220,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,279,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescuentoSAV" HorizontalAlignment="Left" Height="24" Margin="198,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtDescuentoSAV_TextChanged"/>
+        <TextBox x:Name="txtPrecioSAV" HorizontalAlignment="Left" Height="24" Margin="198,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtPrecioSAV_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,31,0,0" TextWrapping="Wrap" Text="Tipo de producto:" VerticalAlignment="Top"/>
+        <RadioButton Content="Salsas" HorizontalAlignment="Left" Margin="492,67,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Aderezos" HorizontalAlignment="Left" Margin="580,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.711,0.867"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,111,0,0" TextWrapping="Wrap" Text="Cantidad de inventario:" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="618,111,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="0-300 piezas"/>
+            <ComboBoxItem Content="300-500 piezas "/>
+            <ComboBoxItem Content="500-700 piezas"/>
+            <ComboBoxItem Content="700-900 piezas"/>
+            <ComboBoxItem Content="+900 piezas"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="460,217,0,0" TextWrapping="Wrap" Text="Cantidad del producto por pieza:" VerticalAlignment="Top"/>
+        <CheckBox Content="75 - 100 gr/ml" HorizontalAlignment="Left" Margin="460,305,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="25 - 50 gr/ml" HorizontalAlignment="Left" Margin="568,259,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="0 - 25 gr/ml" HorizontalAlignment="Left" Margin="460,259,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnGuardarCB" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarSAV_Click" FontSize="14"/>
+        <Button x:Name="btnCancelarCB" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarSAV_Click" FontSize="14"/>
+        <CheckBox Content="50 - 75 gr/ml" HorizontalAlignment="Left" Margin="681,259,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="100 - 500 gr/ml" HorizontalAlignment="Left" Margin="568,305,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="500 - 1000 gr/ml" HorizontalAlignment="Left" Margin="681,305,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Vinagre" HorizontalAlignment="Left" Margin="677,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.711,0.867"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionSAV" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.Arroz__Frijol_y_Semillas"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid x:Name="grdAFS" Margin="2,0,-2,0">
+        <TextBlock HorizontalAlignment="Left" Margin="34,31,0,0" TextWrapping="Wrap" Text="Nombre del producto:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNombreAFS" HorizontalAlignment="Left" Height="24" Margin="198,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtNombreAFS_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,92,0,0" TextWrapping="Wrap" Text="Código de barras:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCodigoAFS" HorizontalAlignment="Left" Height="23" Margin="198,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtCodigoAFS_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,155,0,0" TextWrapping="Wrap" Text="Marca / Empresa:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMarcaAFS" HorizontalAlignment="Left" Height="24" Margin="198,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtMarcaAFS_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,220,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,279,0,0" TextWrapping="Wrap" Text="Descuento:" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDescuentoASF" HorizontalAlignment="Left" Height="24" Margin="198,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtDescuentoASF_TextChanged"/>
+        <TextBox x:Name="txtPrecioAFS" HorizontalAlignment="Left" Height="24" Margin="198,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" TextChanged="txtPrecioAFS_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,31,0,0" TextWrapping="Wrap" Text="Tipo de producto:" VerticalAlignment="Top"/>
+        <RadioButton Content="Arroz" HorizontalAlignment="Left" Margin="492,67,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="Frijol" HorizontalAlignment="Left" Margin="580,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.711,0.867"/>
+        <RadioButton Content="Semillas" HorizontalAlignment="Left" Margin="651,67,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,111,0,0" TextWrapping="Wrap" Text="Cantidad de inventario:" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="618,111,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>0-300 piezas</ComboBoxItem>
+            <ComboBoxItem>300-500 piezas</ComboBoxItem>
+            <ComboBoxItem>500-700 piezas</ComboBoxItem>
+            <ComboBoxItem>700-900 piezas</ComboBoxItem>
+            <ComboBoxItem>+900 piezas</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="460,217,0,0" TextWrapping="Wrap" Text="Cantidad del producto por pieza:" VerticalAlignment="Top"/>
+        <CheckBox Content="500 gr" HorizontalAlignment="Left" Margin="494,259,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="1 kg" HorizontalAlignment="Left" Margin="584,259,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="2 kg" HorizontalAlignment="Left" Margin="661,259,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnGuardarAFS" Content="Guardar" HorizontalAlignment="Left" Margin="508,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnGuardarAFS_Click" FontSize="14" FontWeight="Bold" FontFamily="Century Gothic"/>
+        <Button x:Name="btnCancelarAFS" Content="Cancelar" HorizontalAlignment="Left" Margin="639,375,0,0" VerticalAlignment="Top" Width="81" Height="27" Click="btnCancelarAFS_Click" FontSize="14" FontWeight="Bold" FontFamily="Century Gothic"/>
+        <TextBlock Visibility="Hidden" x:Name="txtExceptionASF" HorizontalAlignment="Left" Margin="55,375,0,0" TextWrapping="Wrap" Text="* Es necesario llenar todos los datos en las cajas de texto." VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</UserControl>
